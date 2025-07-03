@@ -118,7 +118,7 @@ Supports:
 
 ---
 
-## Benchmark (vs JSON ACL):
+## Benchmark (SCode ACL vs JSON ACL):
 
 Encode:
 
