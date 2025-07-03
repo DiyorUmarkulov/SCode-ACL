@@ -62,7 +62,9 @@ export class NestedSCodeFormatter extends SCodeBase<
     };
   }
 
-  public parseAccess(access: NestedAccessString): string[] {
+  public parseAccess(access: NestedAccessString, hash: string): string[] {
+    this.validateHash(hash);
+
     return access
       .split(" ")
       .map((code) => this.flatMap[code])

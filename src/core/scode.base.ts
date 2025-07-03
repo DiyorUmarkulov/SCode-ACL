@@ -43,6 +43,6 @@ export abstract class SCodeBase<TSchema, TEncodedAccess = string>
     access: TEncodedAccess;
     schemaHash: string;
   };
-  abstract parseAccess(access: TEncodedAccess): string[];
+  abstract parseAccess(access: TEncodedAccess, hash: string): string[];
   abstract hasAccess(key: string, access: TEncodedAccess): boolean;
 }

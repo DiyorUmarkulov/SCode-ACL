@@ -55,7 +55,9 @@ export class FlatSCodeFormatter extends SCodeBase<string[], AccessString> {
     };
   }
 
-  public parseAccess(access: AccessString): string[] {
+  public parseAccess(access: AccessString, hash: string): string[] {
+    this.validateHash(hash);
+
     return access
       .split(" ")
       .map((indexStr) => this.schema[parseInt(indexStr, 10)])
