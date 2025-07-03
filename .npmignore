@@ -1,0 +1,47 @@
+# Source files
+src/
+test/
+tests/
+__tests__/
+vitest.config.ts
+vitest.config.js
+
+# Local env
+.env
+.env.*
+
+# Build tools
+rollup.config.js
+rollup.config.ts
+rollup.config.mjs
+tsconfig.json
+tsconfig.build.json
+vite.config.js
+vite.config.ts
+
+# Output dirs
+coverage/
+*.log
+
+# IDE/project files
+.idea/
+.vscode/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docs/examples
+example/
+examples/
+docs/
+
+# Packaging leftovers
+package/
+.turbo/
+
+# Prevent publishing lock file
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
